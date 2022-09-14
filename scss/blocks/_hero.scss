@@ -1,0 +1,95 @@
+.hero {
+    padding: 128px 0px 158px 0px;
+    background-image: url("../images/herobg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.text-wrap {
+    width: 100%;
+    max-width: 527px;
+}
+
+.text-digital {
+    margin: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 155.2%;
+    color: #E87D0E;
+
+}
+
+.text-work {
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 26px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 155.2%;
+    color: #000000;
+
+}
+
+.text-lorem {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    color: #000000;
+
+}
+
+.button {
+    padding: 14px 32px;
+    background: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+    border: none;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+
+}
+
+
+
+
+@include desktop-first (768px) {
+    .hero {
+        padding: 108px 0px 120px 0px;
+        background-image: url("../../images/mobbg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom center;
+    }
+
+    .text-wrap {
+        width: 100%;
+        max-width: 432px;
+    }
+
+
+    .text-digital {
+        font-size: 16px;
+
+    }
+
+    .text-work {
+        padding-top: 31px;
+        padding-bottom: 28px;
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 155.2%;
+        color: #000000;
+
+    }
+
+    .text-lorem {
+        font-size: 14px;
+        margin-bottom: 35px;
+    }
+
+}
