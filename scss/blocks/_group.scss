@@ -165,12 +165,15 @@
 .wrapper-carousel {
     margin: 0 auto;
     width: 100%;
-    max-width: 1420px;
+    max-width: 1460px;
 }
 
 .owl-dt {
     margin: 0 auto;
-    margin-left: -150px;
+}
+
+.owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
+    display: block !important;
 }
 
 .carousel-list {
@@ -186,7 +189,7 @@
 
 .carousel__item {
     width: 100%;
-    max-width: 545px;
+    max-width: 378px;
     padding: 24px 32px 39px 32px;
     display: flex;
     flex-shrink: 0;
