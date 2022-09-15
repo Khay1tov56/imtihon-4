@@ -262,7 +262,7 @@
     font-size: 14px;
     line-height: 187.5%;
     color: #525252;
-
+    text-align: left;
 }
 
 .carousel__title {
@@ -275,13 +275,7 @@
 
 }
 
-.read {
-    float: right;
-
-}
-
 .more {
-    text-align: end;
     font-weight: 500;
     font-size: 14px;
     line-height: 187.5%;
@@ -543,6 +537,15 @@
     .owl-dt {
         margin-left: 0px;
     }
+
+    .stay {
+        padding-bottom: 69px;
+    }
+
+    .bgblack {
+        padding: 30px 30px;
+    }
+    
 
     .bgcolor {
         margin: 0 auto;

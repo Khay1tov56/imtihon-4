@@ -14,52 +14,75 @@
   <!-- SITE HEADER PART BEGIN  -->
   <header class="site-header">
     <div class="container">
-      <div class="row">
-        <div class="d-flex justify-content-end">
-          <address class="me-5">
-            <a href="#">
+      <div class="row d-none d-md-block">
+        <div class="d-flex justify-content-end align-items-baseline py-2">
+          <address class="me-5 mb-0" >
+            <a class="addres-link text-decoration-none d-inline-block" href="#">
               Company Address type here
             </a>
           </address>
-          <a class="ms-5" href="tel:9400000000">
+          <a class="ms-5 tel-link" href="tel:+998999990099">
             +94 000 00000
           </a>
         </div>
-      </div>  
+      </div>
     </div>
     <div class="header-main">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-        <a class="logo text-decoration-none col-5 " href="./index.html">
-          LOGO
-        </a>
-          <div class="col-7 navbar navbar-expand-md bg-transparent justify-content-end align-items-center  pe-1">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="row">
+          <a class="logo text-decoration-none col-3 " href="./index.html">
+            LOGO
+          </a>
+          <div class="col-9  d-flex justify-content-end align-items-center">
+            <div class="navbar navbar-expand-md bg-transparent  pe-1 justify-content-end">
+              <button class="d-block d-md-none btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
               <span class="menu-button">
-                <img src="./images/menu-btn.svg"
-                width="26"
-                height="21" alt="menu-btn">
+                <img src="./images/menu-btn.svg" width="26" height="21" alt="menu-btn">
               </span>
             </button>
-            <nav class="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button> -->
+
+            <nav class="d-none d-md-flex collapse navbar-collapse justify-content-start" id="navbarTogglerDemo01">
+              <ul class="navbar-nav text-center align-items-center mt-5 mt-md-0">
+                <li class="nav-item mb-3 mb-md-0 me-md-5 home">
+                  <a class="site-header-link active" href="#">Home</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About us</a>
+                <li class="nav-item mb-3 mb-md-0 me-md-4 about">
+                  <a class="site-header-link" href="#">About us</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link">Services</a>
+                <li class="nav-item mb-3 mb-md-0 me-md-4 service">
+                  <a class="site-header-link">Services</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link">News</a>
+                <li class="nav-item mb-3 mb-md-0 me-md-4 news">
+                  <a class="site-header-link">News</a>
                 </li>
               </ul>
-              <button class="btn bg-white">Contact us</button>
+              <button class="bg-white contact">Contact us</button>
             </nav>
           </div>
         </div>
+        </div>
+    </div>
+  </div>
+  <div class="offcanvas offcanvas-end bgcolorheader" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close bg-white text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="d-flex navbar-nav text-center align-items-center mt-5 mt-md-0">
+        <li class="nav-item mb-3 mb-md-0 me-md-5 home">
+          <a class="site-header-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item mb-3 mb-md-0 me-md-4 about">
+          <a class="site-header-link" href="#">About us</a>
+        </li>
+        <li class="nav-item mb-3 mb-md-0 me-md-4 service">
+          <a class="site-header-link">Services</a>
+        </li>
+        <li class="nav-item mb-3 mb-md-0 me-md-4 news">
+          <a class="site-header-link">News</a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
@@ -230,8 +253,8 @@
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
               <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
-              <div class="col d-inline-block justify-content-end text-end text-end read">
-                <a class="more position-relative text-decoration-none d-inline-block" href="#"> Read more</a>
+              <div class="ms-auto me-5 read">
+                <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
               </div>
             </div>
@@ -243,8 +266,8 @@
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
               <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
-              <div class="col d-inline-block justify-content-end text-end text-end read">
-                <a class="more position-relative text-decoration-none d-inline-block" href="#"> Read more</a>
+              <div class="ms-auto me-5 read">
+                <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
               </div>
             </div>
@@ -256,8 +279,8 @@
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
               <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
-              <div class="col d-inline-block justify-content-end text-end text-end read">
-                <a class="more position-relative text-decoration-none d-inline-block" href="#"> Read more</a>
+              <div class="ms-auto me-5 read">
+                <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
               </div>
             </div>
@@ -269,8 +292,8 @@
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
               <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
-              <div class="col d-inline-block justify-content-end text-end text-end read">
-                <a class="more position-relative text-decoration-none d-inline-block" href="#"> Read more</a>
+              <div class="ms-auto me-5 read">
+                <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
               </div>
             </div>
@@ -396,12 +419,43 @@
 
 <!-- FOOTER PART BEGIN  -->
 <footer class="site-footer">
-  <div class="container">
-    <div class="row footer">
-<div class="col">
-  <p class="m-0 text-center text-white">Copyright ® 2021 Company All rights Rcerved</p>
-</div>
+  <div class="bg-dark">
+    <div class="container d-none d-md-block">
+      <div class="row flex-column  flex-md-row align-items-center align-items-lg-stretch text-center text-md-start pt-5 pb-3 pb-lg-5 text-white">
+        <div class="col-lg-4 col-md-6 pe-5 mb-4">
+          <a class="mb-1" href="#"><img src="./images/logo.svg" alt="LOGO"></a>
+          <p class="pt-4 pb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <a class="text-decoration-none text-white pt-2" href="#">@Company.com</a>
+        </div>
+        <div class="col-lg-2 col-md-6 pe-4 mb-4">
+          <ul class="list-group list-unstyled">
+            <li><p class="m-0 pb-2 fw-semibold fs-5">About us</p></li>
+            <li><a class="text-white p-0 pt-3 text-decoration-none" href="#">Company</a></li>
+            <li><a class="text-white p-0 text-decoration-none" href="#">Portfolio</a></li>
+            <li><a class="text-white p-0 text-decoration-none" href="#">Careers</a></li>
+            <li><a class="text-white p-0 text-decoration-none" href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 pe-4 mb-4">
+          <p class="m-0 fw-semibold fs-5">Contact us</p>
+          <p class="pt-3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <p>+9000 0000 000</p>
+        </div>
+        <div class="col-lg-3 col-md-6  mb-4 d-flex align-items-end ps-3">
+          <div class="d-flex">
+            <a href="https://www.facebook.com/campaign/landing.php?campaign_id=11554070363&extra_1=s%7Cc%7C477437435741%7Ce%7Cfacebook%7C&placement=&creative=477437435741&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D11554070363%26adgroupid%3D112923417056%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1028523%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwmouZBhDSARIsALYcouojpZS9J2VV6LJYXt5AtMwEDQloPkkznvjyNJxj6EsahCk49V8MElMaAus_EALw_wcB"><img src="./images/facebok.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="./images/instagramme.svg" alt="instagram"></a>
+            <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicnUifQ%3D%3D%22%7D"><img src="./images/twiter.svg" alt="tvitter"></a>
+            <a href="https://www.linkedin.com/feed/"><img src="./images/linkedinme.svg" alt="linkedin"></a>
+          </div>
+        </div>
+      </div>
     </div>
+    <hr class="text-white m-0">
+    <div class="text-center p-4">
+        <a class="text-decoration-none text-white" href="#">Copyright ® 2021 Company All rights Rcerved</a>
+    </div>
+    
   </div>
 </footer>
 <!-- FOOTER PART END  -->

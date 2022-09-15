@@ -381,16 +381,70 @@ body {
 }
 
 /* CONTAINER */
+.addres-link {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #1A1A1A;
+  text-decoration: none;
+  position: relative;
+  align-items: center;
+}
+.addres-link::before {
+  content: "";
+  background-image: url("../../images/local.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: -15px;
+}
+.addres-link:hover {
+  color: #1A1A1A;
+}
+
+.tel-link {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #1A1A1A;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+.tel-link::before {
+  content: "";
+  background-image: url("../images/phone.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 15px;
+  position: absolute;
+  top: 2px;
+  left: -15px;
+}
+.tel-link:hover {
+  color: #1A1A1A;
+}
+
 .header-main {
   padding: 15px 0 13px;
   background-image: linear-gradient(90.05deg, #E47500 -5.66%, #DF7C14 115.63%);
 }
 
 .logo {
+  padding-top: 8px;
   font-family: "Poppins";
   font-weight: 700;
   font-size: 20px;
   line-height: 155.2%;
+  color: #FFFFFF;
+}
+.logo:hover {
   color: #FFFFFF;
 }
 
@@ -399,6 +453,67 @@ body {
   background-color: transparent;
 }
 
+.site-header-link {
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.site-header-link:hover {
+  color: #FFFFFF;
+}
+
+.contact {
+  padding: 10px 28px;
+  display: flex;
+  justify-content: center !important;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #DC7000;
+  border: none;
+  border-radius: 6px;
+}
+
+.bgcolorheader {
+  background-image: linear-gradient(90.05deg, #E47500 -5.66%, #DF7C14 115.63%);
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    position: relative;
+  }
+  .home::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    position: absolute;
+    top: 6px;
+    left: -17px;
+    background-color: #fff;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .logo {
+    padding-top: 12px;
+  }
+  .home {
+    margin-right: 87px !important;
+  }
+  .about {
+    margin-right: 75px !important;
+  }
+  .service {
+    margin-right: 64px !important;
+  }
+  .news {
+    margin-right: 68px !important;
+  }
+}
 .hero {
   padding: 128px 0px 158px 0px;
   background-image: url("../images/herobg.png");
@@ -722,6 +837,7 @@ body {
   font-size: 14px;
   line-height: 187.5%;
   color: #525252;
+  text-align: left;
 }
 
 .carousel__title {
@@ -733,12 +849,7 @@ body {
   color: #000000;
 }
 
-.read {
-  float: right;
-}
-
 .more {
-  text-align: end;
   font-weight: 500;
   font-size: 14px;
   line-height: 187.5%;
@@ -965,6 +1076,12 @@ body {
   .owl-dt {
     margin-left: 0px;
   }
+  .stay {
+    padding-bottom: 69px;
+  }
+  .bgblack {
+    padding: 30px 30px;
+  }
   .bgcolor {
     margin: 0 auto;
     width: 100%;
@@ -1026,8 +1143,4 @@ body {
   .project {
     padding: 141px 0 99px;
   }
-}
-.site-footer {
-  padding: 64px 0;
-  background-color: #1b1b1b;
 }/*# sourceMappingURL=main.css.map */
