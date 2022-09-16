@@ -482,6 +482,18 @@ body {
   background-image: linear-gradient(90.05deg, #E47500 -5.66%, #DF7C14 115.63%);
 }
 
+.offcanvas.offcanvas-end {
+  border-left: none !important;
+}
+
+.offcanvas-header .btn-close {
+  padding: 20px !important;
+  width: 25px !important;
+  height: 25px !important;
+  background-color: #fff !important;
+  font-size: 25px !important;
+}
+
 @media only screen and (min-width: 768px) {
   .home {
     position: relative;
@@ -670,6 +682,9 @@ body {
   padding-bottom: 158px;
   flex-shrink: 0;
 }
+.img-before:nth-child(4) {
+  padding-bottom: 0;
+}
 
 .img-before::before {
   content: "";
@@ -711,19 +726,20 @@ body {
 .owl-prev,
 .owl-next {
   position: absolute;
-  top: 40%;
+  top: 100%;
   transform: translateY(-50%);
   color: aliceblue !important;
-  font-size: 40px !important;
-  font-weight: 300 !important;
+  font-size: 30px !important;
+  font-weight: 500 !important;
   background: none !important;
+  text-align: center !important;
 }
 
 .owl-prev {
   margin: 0 !important;
-  right: 16% !important;
-  width: 70px;
-  height: 70px;
+  right: 14% !important;
+  width: 40px;
+  height: 40px;
   top: -30%;
   background: #fff !important;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
@@ -734,8 +750,8 @@ body {
 .owl-next {
   margin: 0 !important;
   right: 7% !important;
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   top: -30%;
   background: #fff !important;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.12);
@@ -746,11 +762,12 @@ body {
 .wrapper-carousel {
   margin: 0 auto;
   width: 100%;
-  max-width: 1460px;
+  max-width: 1600px;
 }
 
 .owl-dt {
   margin: 0 auto;
+  margin-left: -300px;
 }
 
 .owl-carousel .owl-dots.disabled, .owl-carousel .owl-nav.disabled {
@@ -1073,7 +1090,7 @@ body {
     align-items: start;
     text-align: center;
     margin: 0 auto;
-    width: 329px;
+    width: 309px;
     max-width: inherit;
   }
   .owl-dt {

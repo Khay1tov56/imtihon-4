@@ -29,10 +29,12 @@
     </div>
     <div class="header-main">
       <div class="container">
-        <div class="row">
-          <a class="logo text-decoration-none col-3 " href="./index.html">
-            LOGO
-          </a>
+        <div class="row align-items-center">
+          <div class="col">
+            <a class="logo text-decoration-none col-3 " href="./index.html">
+              LOGO
+            </a>
+          </div>
           <div class="col-9  d-flex justify-content-end align-items-center">
             <div class="navbar navbar-expand-md bg-transparent  pe-1 justify-content-end">
               <button class="d-block d-md-none btn btn-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
@@ -51,10 +53,10 @@
                   <a class="site-header-link" href="#">About us</a>
                 </li>
                 <li class="nav-item mb-3 mb-md-0 me-md-4 service">
-                  <a class="site-header-link">Services</a>
+                  <a class="site-header-link" href="#">Services</a>
                 </li>
                 <li class="nav-item mb-3 mb-md-0 me-md-4 news">
-                  <a class="site-header-link">News</a>
+                  <a class="site-header-link" href="#">News</a>
                 </li>
               </ul>
               <button class="bg-white contact">Contact us</button>
@@ -196,7 +198,7 @@
               </div>
             </li>
              
-            <li class="col-md-4 col-lg-3 img-before position-relative">
+            <li class="d-none d-md-block col-md-4 col-lg-3 img-before position-relative">
               <div class="list-wrap">
                 <h3 class="m-0 pt-4 pb-3 size">AR/ VR design</h3>
                 <a href="#">
@@ -209,7 +211,7 @@
               </div>
             </li>
     
-            <li class="col-md-4 col-lg-3 img-before position-relative">
+            <li class="d-none d-md-block col-md-4 col-lg-3 img-before position-relative">
               <div class="list-wrap">
                 <h3 class="m-0 pt-4 pb-3 size">3D Modelings</h3>
                 <a href="#">
@@ -252,7 +254,7 @@
                   Lorem ipsum
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
-              <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
+                <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the has been the industry's since the 1500s,</p>
               <div class="ms-auto me-5 read">
                 <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
@@ -265,7 +267,7 @@
                   Lorem ipsum
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
-              <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
+                <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the has been the industry's since the 1500s,</p>
               <div class="ms-auto me-5 read">
                 <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
@@ -278,7 +280,7 @@
                   Lorem ipsum
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
-              <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
+              <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the has been the industry's since the 1500s,</p>
               <div class="ms-auto me-5 read">
                 <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
@@ -291,7 +293,7 @@
                   Lorem ipsum
                 </span>
                 <h3 class="carousel__title m-0">Lorem Ipsum</h3>
-              <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the printing and industry.  has been the industry's since the 1500s,</p>
+                <p class="m-0 carusel-text">Lorem Ipsum is simply been has been has  been Ipsum industry's Lorem Ipsum is simply dummy text of the has been the industry's since the 1500s,</p>
               <div class="ms-auto me-5 read">
                 <a class="more text-decoration-none position-relative" href="#"> Read more</a>
               </div>
@@ -430,9 +432,9 @@
         <div class="col-lg-2 col-md-6 pe-4 mb-4">
           <ul class="list-group list-unstyled">
             <li><p class="m-0 pb-2 fw-semibold fs-5">About us</p></li>
-            <li><a class="text-white p-0 pt-3 text-decoration-none" href="#">Company</a></li>
-            <li><a class="text-white p-0 text-decoration-none" href="#">Portfolio</a></li>
-            <li><a class="text-white p-0 text-decoration-none" href="#">Careers</a></li>
+            <li class="pb-1"><a class="text-white p-0 pt-3 text-decoration-none" href="#">Company</a></li>
+            <li class="pb-1"><a class="text-white p-0 text-decoration-none" href="#">Portfolio</a></li>
+            <li class="pb-1"><a class="text-white p-0 text-decoration-none" href="#">Careers</a></li>
             <li><a class="text-white p-0 text-decoration-none" href="#">Contact us</a></li>
           </ul>
         </div>
@@ -460,33 +462,8 @@
 </footer>
 <!-- FOOTER PART END  -->
 <script src="./js/bootstrap.bundle.min.js"></script>
-<!-- <script src="./js/main.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-         $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin:35,
-    nav: true,
-    center:true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    responsiveClass:true,
-    dots: false,
-    responsive:{
-        0:{
-            items:1
-        },
-        768:{
-            items:2
-        },
-        1000:{
-          nav:true,
-            items:3.5
-        }
-    }
-})
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
-

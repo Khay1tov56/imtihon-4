@@ -1,20 +1,24 @@
-// $('.owl-carousel').owlCarousel({
-//     loop: true,
-//     margin:35,
-//     nav: true,
-//     autoplay: true,
-//     autoplayTimeout: 5000,
-//     stagePadding: 200,
-//     dots: false,
-//     responsive:{
-//         0:{
-//             items:1
-//         },
-//         768:{
-//             items:3
-//         },
-//         1000:{
-//             items:2
-//         }
-//     }
-// })
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    center: true,
+    autoplay: true,
+    autoplayTimeout: 6000,
+    responsiveClass: true,
+    dots: false,
+    responsive: {
+        0: {
+            nav: true,
+            items: 1
+        },
+        768: {
+            nav: true,
+            items: 2.2
+        },
+        1000: {
+            nav: true,
+            items: 3.5
+        }
+    }
+});

@@ -112,6 +112,18 @@
 
 }
 
+.offcanvas.offcanvas-end {
+    border-left: none !important;
+}
+
+.offcanvas-header .btn-close {
+    padding: 20px !important;
+    width: 25px !important;
+    height: 25px !important;
+    background-color: #fff !important;
+    font-size: 25px !important;
+} 
+
 @media only screen and (min-width:768px) {
     .home {
         position: relative;
