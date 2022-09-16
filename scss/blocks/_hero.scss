@@ -54,7 +54,11 @@
 
 }
 
-
+@include desktop-first (992px) {
+    .hero {
+        background-position: right;
+    }
+}
 
 
 @include desktop-first (768px) {

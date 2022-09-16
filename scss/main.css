@@ -572,6 +572,11 @@ body {
   color: #fff;
 }
 
+@media only screen and (max-width: 992px) {
+  .hero {
+    background-position: right;
+  }
+}
 @media only screen and (max-width: 768px) {
   .hero {
     padding: 108px 0px 120px 0px;
