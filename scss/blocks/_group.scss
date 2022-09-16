@@ -87,7 +87,11 @@
     padding-bottom: 158px;
     flex-shrink: 0;
 
-    &:nth-child(4) {
+    &:nth-child(5) {
+        padding-bottom: 0;
+    }
+
+    &:nth-child(6) {
         padding-bottom: 0;
     }
 }
@@ -509,6 +513,20 @@
 
     }
 
+    .printer {
+        padding-bottom: 50px;
+    }
+
+    .title-wrapper {
+        padding-bottom: 41px;
+    }
+
+    .img-before {
+        &:nth-child(4) {
+            padding-bottom: 0;
+        }
+    }
+
     .cols {
         padding: 0;
     }
@@ -542,6 +560,11 @@
         width: 309px;
         max-width: inherit;
     }
+
+.home-hero__item {
+    padding: 55px 0px 140px;
+}
+
 
     .owl-dt {
         margin-left: 0px;
