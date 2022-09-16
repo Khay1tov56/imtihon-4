@@ -59,7 +59,7 @@
                   <a class="site-header-link" href="news.html">News</a>
                 </li>
               </ul>
-              <button class="bg-white contact">Contact us</button>
+              <button type="button" class="bg-white contact" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</button>
             </nav>
           </div>
         </div>
@@ -86,9 +86,27 @@
         </ul>
       </div>
     </div>
+    <div class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Loading . . . .</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            The section is under repair
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   </header>
 <!-- SITE HEADER PART END  -->
+
+
 <!-- MAIN PART BEGIN  -->
 <main class="site-main">
     <section>
@@ -98,6 +116,7 @@
     </section>
 </main>
   <!-- MAIN PART END  -->
+<!-- FOOTER PART BEGIN  -->
 <!-- FOOTER PART BEGIN  -->
 <footer class="site-footer">
     <div class="bg-dark">

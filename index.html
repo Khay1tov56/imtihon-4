@@ -59,7 +59,7 @@
                   <a class="site-header-link" href="news.html">News</a>
                 </li>
               </ul>
-              <button class="bg-white contact">Contact us</button>
+              <button type="button" class="bg-white contact" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact us</button>
             </nav>
           </div>
         </div>
@@ -84,6 +84,22 @@
             <a class="site-header-link" href="news.html">News</a>
           </li>
         </ul>
+      </div>
+    </div>
+    <div class="modal fade" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Loading . . . .</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            The section is under repair
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -376,7 +392,23 @@
                   text dummy text </h3>
                   <p class="m-0 fake">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
                   <p class="m-0 pt-4 fake industry">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
-                  <button class="netflix" type="button">Read more</button>
+                  <button class="netflix" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Read more</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">Loading . . . .</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                The section is under repair
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
           </div>
